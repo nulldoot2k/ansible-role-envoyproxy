@@ -1,10 +1,10 @@
 [Unit]
-Description=Envoy Proxy
+Description=Envoy Proxy keystone staging
 
 [Service]
 User=root
 Group=root
-ExecStart=/usr/bin/envoy --base-id 1 -c /etc/envoy/envoy.yaml
+ExecStart=/usr/bin/envoy --base-id 2 -c /etc/envoy/envoy-staging.yaml
 ExecReload=/bin/kill -HUP $MAINPID
 ExecStop=/bin/kill -TERM $MAINPID
 Restart=always
