@@ -18,6 +18,10 @@
 
 > Install Envoy Proxy.
 
+## Update
+
+- ansible deploy multi proxy
+
 ## Install
 
 - requirements.yml
