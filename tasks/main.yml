@@ -25,5 +25,5 @@
   loop:
     - { src: envoy-product.system.j2, dest: /etc/systemd/system/envoy-product.service }
     - { src: envoy-staging.system.j2, dest: /etc/systemd/system/envoy-staging.service }
-    - { src: envoy.yaml.j2, dest: /etc/envoy/envoy.yaml }
+    # - { src: envoy.yaml.j2, dest: /etc/envoy/envoy.yaml }
   notify: restart envoy

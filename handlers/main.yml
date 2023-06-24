@@ -1,12 +1,12 @@
 ---
-- name: restart envoy
+- name: restart envoy-product
   systemd:
     name: envoy-product
     state: "{{ envoy_restart_handler_state }}"
     daemon_reload: yes
     enabled: "{{ envoy_service_enabled }}"
 
-- name: restart envoy
+- name: restart envoy-staging
   systemd:
     name: envoy-staging
     state: "{{ envoy_restart_handler_state }}"
